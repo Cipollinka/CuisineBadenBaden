@@ -88,7 +88,7 @@ const initialState = {
                 createPlace(
                     "c4",
                     "Café König",
-                    require('../../assets/locations/CasualEats/CafeKonig.png'),
+                    require('../../assets/locations/CasualEats/CaféKönig.png'),
                     "A historic café known for its pastries and traditional German breakfast options.",
                     4.5,
                     "48.7648° N, 8.2252° E"
@@ -96,7 +96,7 @@ const initialState = {
                 createPlace(
                     "c5",
                     "Trinkhalle Café Bar Garden",
-                    require('../../assets/locations/CasualEats/TrinkhalleCafeBarGarden.png'),
+                    require('../../assets/locations/CasualEats/TrinkhalleCaféBarGarden.png'),
                     "Offers light meals and drinks in a historic arcade with a beautiful garden.",
                     4.0,
                     "48.7644° N, 8.2259° E"
@@ -117,7 +117,7 @@ const initialState = {
                 createPlace(
                     "b2",
                     "Trinkhalle Café Bar Garden",
-                    require('../../assets/locations/Bars/TrinkhalleCafeBarGarden.png'),
+                    require('../../assets/locations/Bars/TrinkhalleCaféBarGarden.png'),
                     "A light bar in a beautiful garden offering coffee and cocktails.",
                     4.0,
                     "48.7644° N, 8.2259° E"
@@ -133,7 +133,7 @@ const initialState = {
                 createPlace(
                     "b4",
                     "Bärenbar",
-                    require('../../assets/locations/Bars/Barenbar.png'),
+                    require('../../assets/locations/Bars/Bärenbar.png'),
                     "A cozy bar with a selection of drinks in traditional Swiss style.",
                     4.3,
                     "48.7646° N, 8.2231° E"
@@ -162,7 +162,7 @@ const initialState = {
                 createPlace(
                     "l2",
                     "Hofbräuhaus Baden-Baden",
-                    require('../../assets/locations/Local/HofbrauhausBaden-Baden.png'),
+                    require('../../assets/locations/Local/HofbräuhausBaden-Baden.png'),
                     "An authentic Bavarian restaurant offering classic German dishes like schnitzel and pretzels.",
                     4.6,
                     "48.7633° N, 8.2250° E"
@@ -170,7 +170,7 @@ const initialState = {
                 createPlace(
                     "l3",
                     "Baden-Baden Wurstküche",
-                    require('../../assets/locations/Local/Baden-BadenWurstkuche.png'),
+                    require('../../assets/locations/Local/Baden-BadenWurstküche.png'),
                     "A traditional German kitchen with a focus on local sausages and roasted meats.",
                     4.7,
                     "48.7645° N, 8.2258° E"
@@ -178,7 +178,7 @@ const initialState = {
                 createPlace(
                     "l4",
                     "Café de Paris",
-                    require('../../assets/locations/Local/CafedeParis.png'),
+                    require('../../assets/locations/Local/CafédeParis.png'),
                     "A French bistro offering local dishes combined with French delicacies.",
                     4.5,
                     "48.7630° N, 8.2265° E"
