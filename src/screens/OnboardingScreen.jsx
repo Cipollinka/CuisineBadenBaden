@@ -9,7 +9,7 @@ const { width, height } = Dimensions.get('window');
 const slides = [
     {
         id: '1',
-        title: 'Welcome to Cuisine Baden-Baden!',
+        title: 'Welcome to Baden-Baden: Golden Taste!',
         description:
             'Your ultimate guide to the best dining spots in Baden-Baden. Here’s how to make the most of your experience:',
         image: require('../assets/icons/onboarding/Onboarding1.png'),
@@ -71,6 +71,8 @@ const OnboardingScreen = () => {
     };
 
     return (
+        <View style={{flex: 1}}>
+            <Image style={{flex: 1, width: '100%', height: '100%', position: 'absolute'}} source={require('../assets/bg.png')} />
         <View style={styles.container}>
             <View style={styles.imageContainer}>
                 <Image source={slides[currentIndex].image} style={styles.image} resizeMethod="cover" />
@@ -97,13 +99,14 @@ const OnboardingScreen = () => {
                 </TouchableOpacity>
             </View>
         </View>
+        </View>
     );
 };
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#020407',
+        // backgroundColor: '#020407',
         alignItems: 'center',
     },
     imageContainer: {
@@ -134,7 +137,7 @@ const styles = StyleSheet.create({
     },
     contentContainer: {
         width: '100%',
-        backgroundColor: '#020407',
+        // backgroundColor: '#020407',
         borderTopWidth: 1,
         borderTopColor: '#CDA568',
         paddingVertical: 20,

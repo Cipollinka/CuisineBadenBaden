@@ -6,6 +6,8 @@ import { handleSendPress } from '../helpers/shareHelper';
 
 export default function AboutScreen() {
     return (
+        <View style={{flex: 1}}>
+            <Image style={{flex: 1, width: '100%', height: '100%', position: 'absolute'}} source={require('../assets/bg.png')} />
         <SafeAreaView style={styles.safeArea}>
             <View style={styles.container}>
                 <Header />
@@ -57,17 +59,18 @@ export default function AboutScreen() {
                 </ScrollView>
             </View>
         </SafeAreaView>
+        </View>
     );
 }
 
 const styles = StyleSheet.create({
     safeArea: {
         flex: 1,
-        backgroundColor: '#010204',
+        // backgroundColor: '#010204',
     },
     container: {
         flex: 1,
-        backgroundColor: '#010204',
+        // backgroundColor: '#010204',
     },
     backgroundImage: {
         width: '100%',

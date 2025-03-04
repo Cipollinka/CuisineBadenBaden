@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, FlatList, SafeAreaView } from 'react-native';
+import {View, Text, StyleSheet, FlatList, SafeAreaView, Image} from 'react-native';
 import { useSelector } from 'react-redux';
 import Header from '../components/Header';
 import LocationCard from '../components/LocationCard';
@@ -9,6 +9,8 @@ const SavedScreen = () => {
     const savedLocations = useSelector((state) => state.places.savedPlaces);
 
     return (
+        <View style={{flex: 1}}>
+            <Image style={{flex: 1, width: '100%', height: '100%', position: 'absolute'}} source={require('../assets/bg.png')} />
         <SafeAreaView style={styles.safeArea}>
             <Header />
 
@@ -34,6 +36,7 @@ const SavedScreen = () => {
                 />
             </View>
         </SafeAreaView>
+        </View>
     );
 };
 
@@ -42,7 +45,7 @@ export default SavedScreen;
 const styles = StyleSheet.create({
     safeArea: {
         flex: 1,
-        backgroundColor: '#020407',
+        // backgroundColor: '#020407',
     },
     container: {
         flex: 1,

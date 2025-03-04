@@ -47,6 +47,8 @@ export default function LoadingScreen() {
     const IconComponent = categoryIcons[categoryName] || null;
 
     return (
+        <View style={{flex: 1}}>
+            <Image style={{flex: 1, width: '100%', height: '100%', position: 'absolute'}} source={require('../assets/bg.png')} />
         <SafeAreaView style={styles.container}>
             <View style={styles.imageWrapper}>
                 <Image
@@ -80,13 +82,14 @@ export default function LoadingScreen() {
                 <Text style={styles.waitText}>Wait...</Text>
             </View>
         </SafeAreaView>
+        </View>
     );
 }
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#020407',
+        // backgroundColor: '#020407',
         alignItems: 'center',
         paddingTop: 12,
     },

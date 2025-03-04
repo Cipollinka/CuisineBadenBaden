@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, SafeAreaView } from 'react-native';
+import {View, Text, TouchableOpacity, StyleSheet, SafeAreaView, Image} from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigation } from '@react-navigation/native';
 
@@ -41,6 +41,8 @@ const CategoryScreen = () => {
     };
 
     return (
+        <View style={{flex: 1}}>
+            <Image style={{flex: 1, width: '100%', height: '100%', position: 'absolute'}} source={require('../assets/bg.png')} />
         <SafeAreaView style={styles.safeArea}>
             <View style={styles.container}>
                 <Text style={styles.title}>Your perfect location:</Text>
@@ -71,6 +73,7 @@ const CategoryScreen = () => {
                 </TouchableOpacity>
             </View>
         </SafeAreaView>
+        </View>
     );
 };
 
@@ -79,11 +82,11 @@ export default CategoryScreen;
 const styles = StyleSheet.create({
     safeArea: {
         flex: 1,
-        backgroundColor: '#020407',
+        // backgroundColor: '#020407',
     },
     container: {
         flex: 1,
-        backgroundColor: '#010204',
+        // backgroundColor: '#010204',
         paddingHorizontal: 32,
         borderTopWidth: 1,
         borderTopColor: '#CDA568',

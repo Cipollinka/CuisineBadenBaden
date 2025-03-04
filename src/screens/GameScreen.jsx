@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, ScrollView, StyleSheet } from 'react-native';
+import {Image, SafeAreaView, ScrollView, StyleSheet, View} from 'react-native';
 import { useSelector } from 'react-redux';
 import { useNavigation } from '@react-navigation/native';
 import { useBottomTabBarHeight } from '@react-navigation/bottom-tabs';
@@ -19,6 +19,8 @@ export default function GameScreen() {
     };
 
     return (
+        <View style={{flex: 1}}>
+            <Image style={{flex: 1, width: '100%', height: '100%', position: 'absolute'}} source={require('../assets/bg.png')} />
         <SafeAreaView style={styles.safeArea}>
             <ScrollView
                 contentContainerStyle={[
@@ -31,13 +33,14 @@ export default function GameScreen() {
                 <LevelsSection levels={levels} onPress={handleLevelPress} />
             </ScrollView>
         </SafeAreaView>
+        </View>
     );
 }
 
 const styles = StyleSheet.create({
     safeArea: {
         flex: 1,
-        backgroundColor: '#010204',
+        // backgroundColor: '#010204',
     },
     container: {
         flexGrow: 1,

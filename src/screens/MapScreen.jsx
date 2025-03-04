@@ -4,7 +4,7 @@ import {
     StyleSheet,
     View,
     TouchableOpacity,
-    Text,
+    Text, Image,
 } from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
 import { useSelector, useDispatch } from 'react-redux';
@@ -54,6 +54,8 @@ const MapScreen = () => {
     };
 
     return (
+        <View style={{flex: 1}}>
+            <Image style={{flex: 1, width: '100%', height: '100%', position: 'absolute'}} source={require('../assets/bg.png')} />
         <SafeAreaView style={styles.safeArea}>
             <Header />
             <View style={styles.container}>
@@ -88,6 +90,7 @@ const MapScreen = () => {
                 )}
             </View>
         </SafeAreaView>
+        </View>
     );
 };
 
@@ -96,7 +99,7 @@ export default MapScreen;
 const styles = StyleSheet.create({
     safeArea: {
         flex: 1,
-        backgroundColor: '#020407',
+        // backgroundColor: '#020407',
     },
     container: {
         flex: 1,

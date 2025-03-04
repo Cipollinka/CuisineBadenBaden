@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SafeAreaView, View, StyleSheet, Text } from 'react-native';
+import {SafeAreaView, View, StyleSheet, Text, Image} from 'react-native';
 import { useRoute, useNavigation } from '@react-navigation/native';
 import { useSelector, useDispatch } from 'react-redux';
 import { completeLevel } from '../store/slices/quizSlice';
@@ -49,6 +49,8 @@ export default function QuestionScreen() {
     };
 
     return (
+        <View style={{flex: 1}}>
+            <Image style={{flex: 1, width: '100%', height: '100%', position: 'absolute'}} source={require('../assets/bg.png')} />
         <SafeAreaView style={styles.container}>
             <View style={styles.contentWrapper}>
                 {!answered && (
@@ -88,13 +90,14 @@ export default function QuestionScreen() {
                 )}
             </View>
         </SafeAreaView>
+        </View>
     );
 }
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#010204',
+        // backgroundColor: '#010204',
     },
     contentWrapper: {
         flex: 1,
